@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="ToDoList.css" />
+  </head>
+  <body>
+    <div class="Container">
+      <h1>My ToDo List</h1>
+      <div class="InputSection">
+        <form id="TodoForm">
+          <input
+            type="text"
+            id="TodoFormInput"
+            placeholder="Add a new task..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="AddTaskButton">+</button>
+        </form>
+      </div>
+      <div class="TasksSection">
+        <div id="NoTasks">No tasks yet. Add your first task!</div>
+        <ul id="TaskList">
+          <!-- Tasks will appear here -->
+        </ul>
+      </div>
+    </div>
+    <script src="../BackEnd/ToDoList.js"></script>
+  </body>
+</html>
